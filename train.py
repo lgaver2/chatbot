@@ -90,3 +90,18 @@ for epoch in range(num_epocs):
         loss.backward()
         optimizer.step()
 
+
+data = {
+    "model_state" : model.state_dict(),
+    "input_size" : input_size,
+    "output_size" : output_size,
+    "hidden_size" : hidden_size,
+    "all_words" : all_words,
+    "tags" : tags
+}
+
+FILE = "data.pth"
+torch.save(data, FILE)
+
+print(f"finish training. file save to : {FILE}")
+
