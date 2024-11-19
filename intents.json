@@ -1,0 +1,81 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "Good morning",
+          "Good evening",
+          "What's up?"
+        ],
+        "responses": [
+          "Hello! How can I assist you today?",
+          "Hi there! What can I do for you?",
+          "Hey! Need help with something?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "Take care",
+          "I'm leaving"
+        ],
+        "responses": [
+          "Goodbye! Have a great day!",
+          "See you later!",
+          "Take care and see you soon!"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "Much appreciated",
+          "Thanks a lot",
+          "I appreciate it"
+        ],
+        "responses": [
+          "You're welcome!",
+          "Happy to help!",
+          "No problem at all!"
+        ]
+      },
+      {
+        "tag": "help",
+        "patterns": [
+          "Can you help me?",
+          "I need assistance",
+          "What can you do?",
+          "Help me",
+          "I need help"
+        ],
+        "responses": [
+          "Sure, I'm here to help! What do you need assistance with?",
+          "Of course! Tell me what you need help with.",
+          "I'm here to assist you. Please let me know your question."
+        ]
+      },
+      {
+        "tag": "generation_spontanee",
+        "patterns": [
+          "What is spontaneous generation?",
+          "Tell me about spontaneous generation",
+          "Explain the concept of spontaneous generation",
+          "Do organisms appear from nowhere?",
+          "What is the theory of spontaneous generation?"
+        ],
+        "responses": [
+          "Spontaneous generation is an ancient theory suggesting that living organisms can arise from non-living matter. It has been disproven by scientific experiments.",
+          "The theory of spontaneous generation posited that life could emerge from inanimate objects, such as flies from meat. Louis Pasteur debunked this theory with his experiments.",
+          "Spontaneous generation was once believed to explain how life forms could appear spontaneously from non-living material. It's now replaced by the principle of biogenesis, which states that life comes from pre-existing life."
+        ]
+      }
+    ]
+  }
+  
