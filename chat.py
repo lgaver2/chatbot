@@ -11,7 +11,7 @@ with open('intents.json', 'r') as f:
 
 FILE = "data.pth"
 
-data = torch.load(FILE)
+data = torch.load(FILE, weights_only=True)
 
 input_size = data['input_size']
 output_size = data['output_size']
@@ -35,7 +35,7 @@ while True:
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
-    X = torch.from_numpy(X)
+    X = torch.from_numpy(X).to(device)
 
     output = model(X)
     _, predicted = torch.max(output, dim=1)
